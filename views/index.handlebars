@@ -1,30 +1,44 @@
-<h3>Burgers I want to eat ...</h3>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      <li>
-          {{this.id}}. {{this.burger_name}}
-          <button data-id="{{this.id}}" class="eaten">Devoured!</button>
-      </li>
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class = "container bg-warning pt-1 pb-1">
+  <div class="text-center pt-3">
+  <!--free clip art image provided by https://clipartix.com/burger-clipart-image-56901/-->
+  <img class="text-center" src="../public/assets/img/BurgerClipart56901.png" width="50" height="50"/>
+  <h2 class="text-center text-danger">Eat Da Burger!</h2>
+</div>
+</div>
+<div class = "container bg-warning pt-3 mb-1">
+  <div class = "row">
+    <div class = "col">
+      <h4>Burgers I want to eat ...</h4>
+      <ol>
+        {{#each burgers}}
+          {{#unless devoured}}
+            <li>
+              <!--{{this.id}}. I don't like how this looks. -->
+              {{this.burger_name}}
+              <button data-id="{{this.id}}" class="eaten">Devoured!</button>
+            </li>
+          {{/unless}}
+        {{/each}}
+      </ol>
+    </div>
 
-<h3>Burgers I've eaten ...</h3>
+    <div class = "col">
+      <h4>Burgers I've eaten ...</h4>
+      <ol>
+        {{#each burgers}}
+          {{#if devoured}}
+            <li> 
+              {{this.burger_name}}
+            </li> 
+          {{/if}}
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+</div>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      <li> 
-        {{this.id}}. {{this.burger_name}}
-      </li> 
-    {{/if}}
-  {{/each}}
-</ul>
-
-
-<form class="create-form">
+<form class="create-form text-center">
   <div class="form-group">
     <input type="text" id="input" name="submitThisBurger">
   </div>
