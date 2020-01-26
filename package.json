@@ -2,10 +2,12 @@
   "name": "burger",
   "version": "1.0.0",
   "description": "Allows a user to log desired burgers and mark when each has been consumed.",
-  "main": "index.js",
+  "main": "server.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jem3523/homework_week13.git"
