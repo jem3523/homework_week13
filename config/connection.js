@@ -2,6 +2,7 @@
 var mysql = require("mysql");
 var pw = require("../security");
 
+//the if statement allows for a JAWSDB setup during the heroku deployment
 if (process.env.JAWSDB_URL)
 {
   var connection = mysql.createConnection(process.env.JAWSDB_URL);
@@ -19,7 +20,6 @@ else
 }
 
 
-// Make connection.
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);

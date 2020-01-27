@@ -8,7 +8,8 @@
 </div>
 <div class = "container bg-warning pt-3 mb-1">
   <div class = "row">
-    <div class = "col">
+    <div class= "col-3"> </div>
+    <div class = "col-3">
       <h4>Burgers I want to eat ...</h4>
       <ol>
         {{#each burgers}}
@@ -23,9 +24,11 @@
       </ol>
     </div>
 
-    <div class = "col">
+
+
+    <div class = "col-3">
       <h4>Burgers I've eaten ...</h4>
-      <ol>
+      <ol class = "">
         {{#each burgers}}
           {{#if devoured}}
             <li> 
@@ -35,6 +38,7 @@
         {{/each}}
       </ol>
     </div>
+    <div class= "col-3"> </div>
   </div>
 </div>
 
