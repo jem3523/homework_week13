@@ -12,10 +12,10 @@
     <div class = "col-3">
       <h4>Burgers I want to eat ...</h4>
       <ol>
+        <!-- connects to controller -->
         {{#each burgers}}
           {{#unless devoured}}
             <li>
-              <!--{{this.id}}. I don't like how this looks. -->
               {{this.burger_name}}
               <button data-id="{{this.id}}" class="eaten">Devoured!</button>
             </li>

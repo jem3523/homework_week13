@@ -1,6 +1,7 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() 
 {
+  //listener for devour button
   $(".eaten").on("click", function(event) 
   {
     var id = $(this).data("id");
@@ -19,6 +20,7 @@ $(function()
     );
   });
 
+  //listener for submit button
   $(".create-form").on("submit", function(event) 
   {
     event.preventDefault();
