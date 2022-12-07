@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jem3523/homework_week13#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^3.1.0",
     "mysql": "^2.18.1"
   }
